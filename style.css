@@ -135,14 +135,16 @@ footer {
 }
 
 #hero {
-	background-image: url(assets/images/hero-image.png);
+	background-image: url(assets/gif.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 250px;
+	margin-bottom: 5rem;
 }
 
 .content-container {
 	background-color: rgba(244, 244, 244, .7);
+	height: 100vh;
 }
 
 
