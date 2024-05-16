@@ -104,12 +104,13 @@ path {
 }
 
 .nav-link:hover {
-	color: var(--lady-house-green);
+	color: tan;
+	border-bottom: 2px solid tan;
 }
 
 .current-link {
-	color: var(--wht);
-	border-bottom: 2px solid var(--wht);
+	color: tan;
+	border-bottom: 2px solid tan;
 }
 
 .button-container {
