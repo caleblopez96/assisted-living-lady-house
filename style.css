@@ -1,0 +1,335 @@
+:root {
+	--safety-yellow: #ffff00;
+	--wht: #f4f4f4;
+	--light-red: #e9645d;
+	--light-black: rgba(0, 0, 0, 0.75); 
+
+	--lady-house-green: rgba(102, 126, 89, 0.9);
+
+	--heading-font: "Playfair Display", serif;
+	--body-font: "Manrope", sans-serif;
+
+	--box-shadow-minimal: "box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px";
+	--box-shadow-prominent: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px";
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--wht);
+}
+
+body {
+	text-wrap: balance;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-family: var(--body-font);
+}
+
+a {
+	text-decoration: none;
+}
+
+
+header {
+	box-shadow: var(--box-shadow-prominent);
+	margin-bottom: 5rem;
+}
+
+button {
+	all: unset;
+}
+
+path {
+	stroke: var(--wht);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+}
+
+.hamburger {
+	display: none;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--wht);
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.nav-logo img {
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+}
+
+.nav-item {
+	font-family: var(--heading-font);
+}
+
+.nav-link {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--wht);
+}
+
+.nav-link:hover {
+	color: var(--lady-house-green);
+}
+
+.current-link {
+	color: var(--wht);
+	border-bottom: 2px solid var(--wht);
+}
+
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.blur {
+	filter: blur(0.75rem);
+}
+
+main {
+	padding: 1rem;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+header,
+footer {
+	background-color: var(--lady-house-green);
+	line-height: 1.5;
+}
+
+
+.testimonial-card-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.testimonial-section h1 {
+	letter-spacing: .15rem;
+
+}
+
+.testimonial-card {
+	/* background-color: black; */
+	background-color: var(--lady-house-green);
+	padding: 1.25rem;
+	margin: 1rem 0;
+} 
+
+.member-score {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.25rem;
+	border-bottom: 2px solid rgba(245, 245, 245, 0.15);
+}
+
+.name,
+.testimonial-card span {
+	font-family: var(--heading-font);
+}
+
+.name {
+	color: black;
+}
+
+
+.testimonial-card {
+	color: var(--wht);
+}
+
+.member {
+	color: var(--wht);
+}
+
+/* footer */
+
+.footer-img {
+	max-width: 100%;
+	height: 300px;
+	padding: 1.75rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.small-topper-left {
+	color: var(--lady-house-green);
+	text-align: left;
+	font-size: .75rem;
+	letter-spacing: 0.25rem;
+	font-weight: 700;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+footer li {
+	display: inline;
+}
+
+footer h3,
+footer h1 {
+	margin-bottom: 1.25rem;
+	font-size: 1.5rem;
+}
+
+footer a {
+	font-family: var(--body-font);
+}
+
+footer a:visited {
+	color: var(--wht);
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-section a {
+	line-height: 2rem;
+}
+
+footer > * {
+	padding: 0.5rem 1rem;
+	text-align: left;
+}
+
+address > * {
+	line-height: 2rem;
+	color: var(--wht);
+	font-style: normal;
+}
+
+address h1 {
+	font-size: 1.25rem;
+}
+
+address a:hover {
+	border-bottom: 2px solid var(--wht);
+}
+
+.copyright {
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+/* MEDIA QUERIES */
+
+/* 769PX OR LESS **MOBILE** */
+
+@media screen and (max-width: 769px) {
+	header {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+	}
+
+	.hero-container {
+		flex-direction: column;
+	}
+
+	.programs-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.services-content ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.nav-menu.active {
+		left: 0;
+		top: 7.1rem;
+		position: absolute;
+		background-color: var(--lady-house-green);
+	}
+
+	.nav-item {
+		margin: 2rem 0;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.navigation-button-container {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.testimonial-card-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+}
