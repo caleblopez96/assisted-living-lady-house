@@ -64,6 +64,7 @@ path {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1.5rem;
+	width: 100%;
 }
 
 .hamburger {
@@ -145,7 +146,7 @@ footer {
 
 .testimonial-section h1 {
 	letter-spacing: .15rem;
-
+	max-width: 100%;
 }
 
 .testimonial-card {
@@ -245,6 +246,7 @@ address > * {
 
 address h1 {
 	font-size: 1.25rem;
+	color: black;
 }
 
 address a:hover {
@@ -253,7 +255,8 @@ address a:hover {
 
 .copyright {
 	text-align: center;
-	font-size: 0.75rem;
+	color: var(--wht);
+	font-size: .9rem;
 }
 
 /* MEDIA QUERIES */
