@@ -93,7 +93,6 @@ path {
 	justify-content: space-between;
 	align-items: center;
 	gap: 2rem;
-	background-color: var(--lady-house-green);
 }
 
 .nav-logo img {
@@ -146,7 +145,7 @@ footer {
 	background-image: url(assets/gif.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 70vh;
+	height: 90vh;
 	margin-bottom: 5rem;
 }
 
@@ -161,8 +160,21 @@ footer {
 }
 
 .content-container h1 {
-	font-size: 2.5rem;
+	font-size: clamp(3rem, 2.913rem + 0.4348vw, 3.5rem);
+	max-width: 50ch;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
 }
+
+.content-container p {
+	max-width: 75ch;
+}
+
+/* 
+.text-shadow-drop-center{
+	animation: text-shadow-drop-center .6s both;
+}
+
+@keyframes text-shadow-drop-center{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 18px rgba(0,0,0,.45)}} */
 
 .testimonial-card-container {
 	display: grid;
