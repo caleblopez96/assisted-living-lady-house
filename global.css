@@ -35,19 +35,24 @@ body {
 }
 
 
-html {
-	overflow-x: hidden; /* work on this because it makes my nav menu active not sticky*/
+html,
+body {
+  overflow-x: hidden;
 	line-height: 1.5;
+  text-wrap: balance;
+	width: 100%;
 }
 
 main {
 	padding: 0 1rem 1rem 1rem;
-}  
+}
+
 
 
 header,
 footer {
 	background-color: var(--lady-house-green);
+  width: 100%;
 }
 
 h1,
@@ -82,4 +87,8 @@ path {
 
 .blur {
 	filter: blur(0.75rem);
+}
+
+.section-spacing{
+  margin: 2rem 0;
 }

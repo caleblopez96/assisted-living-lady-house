@@ -67,7 +67,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 90vh;
-	margin-bottom: 5rem;
+
 }
 
 .content-container {
@@ -90,18 +90,39 @@
 	max-width: 75ch;
 }
 
+.quick-connect {
+	width: 100%;
+}
+
+	.quick-connect ul {
+		background-color: var(--lady-house-green);
+		padding: 1rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.quick-connect p {
+		color: var(--wht);
+	}
+
+/* service section */
+
 .services-section ul {
 	font-family: var(--body-font);
 	text-decoration: none;
 }
 
-.services-section a:visited {
+.services-section a:visited,
+.amenities-section a:visited {
 	color: inherit;
 }
 
-/* .services-section h1 {
+/* amenities */
 
-} */
+.amenities-section ul {
+	font-family: var(--body-font);
+}
 
 /* testimonial */
 .testimonial-card-container {
@@ -109,7 +130,6 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 	gap: 2rem;
-
 }
 
 .button {
@@ -137,6 +157,34 @@
   white-space: nowrap;
 	max-width: fit-content;
 }
+
+.quick-connect-button{
+
+		appearance: none;
+		background-color: var(--wht);
+		border: 1px solid rgba(27, 31, 35, .15);
+		border-radius: 6px;
+		box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+		box-sizing: border-box;
+		color: var(--lady-house-green);
+		cursor: pointer;
+		display: inline-block;
+		font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+		padding: 6px 16px;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		vertical-align: middle;
+		white-space: nowrap;
+		max-width: fit-content;
+	}
+
 
 .button:focus:not(:focus-visible):not(.focus-visible) {
   box-shadow: none;
@@ -174,6 +222,7 @@
 	background-color: var(--lady-house-green);
 	padding: 1.25rem;
 	margin: 1rem 0;
+	font-size: clamp(0.75rem, 0.7065rem + 0.2174vw, 1rem);
 } 
 
 .member-score {
@@ -199,7 +248,7 @@
 /* footer */
 
 .footer-img {
-	max-width: 100%;
+	max-width: auto;
 	height: 300px;
 	padding: 1.75rem;
 	display: block;
@@ -217,6 +266,10 @@
 
 footer {
 	overflow: hidden;
+}
+
+footer h1 {
+	text-align: center;
 }
 
 footer ul {
@@ -356,6 +409,13 @@ iframe {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.quick-connect ul {
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+		text-align: center;
 	}
 
 	.testimonial-card-container {
