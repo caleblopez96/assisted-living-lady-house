@@ -3,6 +3,7 @@ const navMenu = document.querySelector(".nav-menu");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 const hero = document.querySelector('#hero');
+const quickConnect = document.querySelector(".quick-connect");
 
 
 // button.addEventListener("click", () => {
@@ -14,22 +15,10 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
-	main.classList.toggle("blur");
-	footer.classList.toggle("blur");
-	hero.classList.toggle("blur")
+
+	const blurElements = [main, footer, hero, quickConnect];
+	
+	blurElements.forEach(element => {
+	element.classList.toggle("blur");
+});
 }
-
-// window.addEventListener('resize', function() {
-//   const maxWidth = 769;
-//   if (window.innerWidth > maxWidth) {
-//   hamburger.classList.remove('active');
-// 	navMenu.classList.remove('active');
-// }});
-
-// POINTLESS AH FUNC BORED WRITING CSS AND HTML :(
-//function upperCaseHeader() {
-// 	const navItems = document.querySelectorAll(".nav-item");
-// 	navItems.forEach(navItem => navItem.textContent = navItem.textContent.toUpperCase())
-// }
-
-// upperCaseHeader()
