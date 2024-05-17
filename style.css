@@ -32,7 +32,8 @@ body {
 
 html,
 body {
-	overflow-x: hidden
+	overflow-x: hidden;
+	line-height: 1.5;
 }
 
 h1,
@@ -139,7 +140,6 @@ main {
 header,
 footer {
 	background-color: var(--lady-house-green);
-	line-height: 1.5;
 }
 
 #hero {
@@ -158,7 +158,6 @@ footer {
 	justify-content: center;
 	gap: 2rem;
 	padding: 1rem;
-	text-align: center;
 }
 
 .content-container h1 {
@@ -195,6 +194,7 @@ footer {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+	max-width: fit-content;
 }
 
 .button:focus:not(:focus-visible):not(.focus-visible) {
@@ -262,6 +262,7 @@ footer {
 	padding: 1.75rem;
 	display: block;
 	margin: 0 auto;
+	border-radius: 50%;
 }
 
 .small-topper-left {
@@ -307,7 +308,7 @@ footer a:visited {
 }
 
 .footer-section a {
-	line-height: 2rem;
+	/* line-height: 2rem; */
 }
 
 footer > * {
@@ -316,7 +317,7 @@ footer > * {
 }
 
 address > * {
-	line-height: 2rem;
+	/* line-height: 2rem; */
 	color: var(--wht);
 	font-style: normal;
 }
@@ -369,7 +370,7 @@ address a:hover {
 		flex-direction: column;
 		width: 100%;
 		text-align: center;
-		transition: 0.3s;
+		transition: .3s;
 	}
 
 	.nav-menu.active {
