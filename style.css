@@ -1,71 +1,5 @@
-:root {
-	--wht: #f4f4f4;
-	--light-black: rgba(0, 0, 0, 0.75); 
 
-	--lady-house-green: rgba(102, 126, 89, 0.95);
-
-	--heading-font: "Playfair Display", serif;
-	--body-font: "Manrope", sans-serif;
-
-	--box-shadow-minimal: "box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px";
-	--box-shadow-prominent: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px";
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-html{
-	background-color: var(--wht);
-	width: 100%;
-	scroll-behavior: smooth;
-}
-
-body {
-	text-wrap: balance;
-	width: 100%;
-}
-
-html,
-body {
-	overflow-x: hidden;
-	line-height: 1.5;
-}
-
-h1,
-h2,
-h3 {
-	font-family: var(--heading-font);
-}
-
-li {
-	list-style: none;
-}
-
-p {
-	font-family: var(--body-font);
-}
-
-a {
-	text-decoration: none;
-}
-
-
-header {
-	box-shadow: var(--box-shadow-prominent);
-}
-
-button {
-	all: unset;
-}
-
-path {
-	stroke: var(--wht);
-}
+/* navbar */
 
 .navbar {
 	display: flex;
@@ -127,20 +61,7 @@ path {
 	gap: 1rem;
 }
 
-.blur {
-	filter: blur(0.75rem);
-}
-
-main {
-	padding: 0 1rem 1rem 1rem;
-}  
-
-
-header,
-footer {
-	background-color: var(--lady-house-green);
-}
-
+/* hero */
 #hero {
 	background-image: url(assets/gif.gif);
 	background-size: cover;
@@ -169,18 +90,26 @@ footer {
 	max-width: 75ch;
 }
 
-/* 
-.text-shadow-drop-center{
-	animation: text-shadow-drop-center .6s both;
+.services-section ul {
+	font-family: var(--body-font);
+	text-decoration: none;
 }
 
-@keyframes text-shadow-drop-center{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 18px rgba(0,0,0,.45)}} */
+.services-section a:visited {
+	color: inherit;
+}
 
+/* .services-section h1 {
+
+} */
+
+/* testimonial */
 .testimonial-card-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: auto;
 	gap: 2rem;
+
 }
 
 .button {
@@ -235,8 +164,9 @@ footer {
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
-.testimonial-section h1 {
+.heading-word-spacing{
 	letter-spacing: .15rem;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 }
 
 .testimonial-card {
@@ -319,9 +249,9 @@ footer a:visited {
 	flex-direction: column;
 }
 
-.footer-section a {
-	/* line-height: 2rem; */
-}
+/* .footer-section a {
+	line-height: 2rem;
+} */
 
 footer > * {
 	padding: 0.5rem 1rem;
@@ -349,11 +279,19 @@ address a:hover {
 	font-size: .9rem;
 }
 
+iframe {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* MEDIA QUERIES */
 
 /* 769PX OR LESS **MOBILE** */
 
 @media screen and (max-width: 769px) {
+
+
 	header {
 		position: sticky;
 		top: 0;
@@ -390,6 +328,7 @@ address a:hover {
 		top: 7.1rem;
 		position: absolute;
 		background-color: var(--lady-house-green);
+		overflow-x: visible;
 	}
 
 	.nav-item {
@@ -420,9 +359,9 @@ address a:hover {
 	}
 
 	.testimonial-card-container {
-		display: flex;
-		flex-wrap: wrap;
+		grid-template-columns: 1fr;
 		gap: 1rem;
+		place-items: center;
 	}
 }
 
