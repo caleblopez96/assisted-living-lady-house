@@ -2,8 +2,8 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
-const path = document.querySelector("path");
-const button = document.querySelector("night-mode-toggle-button");
+const hero = document.querySelector('#hero');
+
 
 // button.addEventListener("click", () => {
 //   path.classList.toggle("svgDay");
@@ -16,6 +16,7 @@ function mobileMenu() {
 	navMenu.classList.toggle("active");
 	main.classList.toggle("blur");
 	footer.classList.toggle("blur");
+	hero.classList.toggle("blur")
 }
 
 // window.addEventListener('resize', function() {
