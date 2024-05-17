@@ -28,7 +28,12 @@ html{
 body {
 	text-wrap: balance;
 	width: 100%;
-} 
+}
+
+html,
+body {
+	overflow-x: hidden
+}
 
 h1,
 h2,
