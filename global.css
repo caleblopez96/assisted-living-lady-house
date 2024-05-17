@@ -9,7 +9,7 @@ html{
 	--wht: #f4f4f4;
 	--light-black: rgba(0, 0, 0, 0.75); 
 
-	--lady-house-green: rgba(102, 126, 89, 0.95);
+	--lady-house-green: rgb(102, 126, 89);
 
 	--heading-font: "Playfair Display", serif;
 	--body-font: "Manrope", sans-serif;
@@ -37,7 +37,7 @@ body {
 
 html,
 body {
-  overflow-x: hidden;
+
 	line-height: 1.5;
   text-wrap: balance;
 	width: 100%;
@@ -53,6 +53,10 @@ header,
 footer {
 	background-color: var(--lady-house-green);
   width: 100%;
+}
+
+footer {
+	background-color: rgba(102, 126, 89, 0.95);
 }
 
 h1,
@@ -92,3 +96,7 @@ path {
 .section-spacing{
   margin: 2rem 0;
 }
+/* 
+.remove-scroll {
+	overflow: hidden;
+} */
