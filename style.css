@@ -220,6 +220,7 @@
 }
 
 .testimonial-card {
+	background-repeat: repeat;
 	color: var(--wht);
 	background-color: var(--lady-house-green);
 	padding: 1.25rem;
@@ -282,23 +283,29 @@ footer li {
 	display: inline;
 }
 
-footer h3,
-footer h1 {
-	margin-bottom: 1.25rem;
-	font-size: 1.5rem;
-}
-
 footer a {
 	font-family: var(--body-font);
 }
 
-footer a:visited {
+/* footer a:visited {
 	color: var(--wht);
-}
+} */
 
 .footer-section {
 	display: flex;
 	flex-direction: column;
+	margin-top: .5rem;
+}
+
+.map-and-directions {
+	font-weight: bold;
+	color: black;
+	font-family: var(--heading-font);
+}
+
+a[href^="tel:"],
+a[href^="mailto:"] {
+	color: black;
 }
 
 /* .footer-section a {
@@ -329,10 +336,15 @@ address a:hover {
 	border-bottom: 2px solid var(--wht);
 }
 
+address span {
+	font-family: var(--body-font);
+	color: black;
+}
+
 .copyright-container {
 	display: flex;
 	flex-direction: column;
-	font-size: clamp(1rem, 0.8261rem + 0.8696vw, 2rem);
+	font-size: clamp(.5rem, 0.8261rem + 0.8696vw, 1rem);
 	color: var(--wht);
 
 	font-family: var(--body-font);
