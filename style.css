@@ -402,7 +402,7 @@ iframe {
 		top: 7rem;
 		position: absolute;
 		background-color: var(--lady-house-green);
-		/* overflow-x: visible; */
+
 		gap: .25rem;
 
 	}
@@ -467,4 +467,8 @@ iframe {
 		flex-wrap: wrap;
 		gap: 1rem;
 	}
+}
+
+.remove-scroll {
+	overflow: hidden;
 }
