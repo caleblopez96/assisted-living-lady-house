@@ -1,4 +1,3 @@
-
 /* navbar */
 
 .navbar {
@@ -255,6 +254,11 @@
 	border-radius: 50%;
 }
 
+footer h3 {
+	text-decoration: underline;
+	margin: 1em 0;
+}
+
 .small-topper-left {
 	color: var(--lady-house-green);
 	text-align: left;
@@ -282,7 +286,7 @@ footer li {
 footer a {
 	font-family: var(--body-font);
 	color: var(--wht);
-
+	margin: .5em 0;
 }
 
 /* footer a:visited {
@@ -317,10 +321,6 @@ a[href^="mailto:"] {
 footer > * {
 	padding: 0.5rem 1rem;
 	text-align: left;
-}
-
-footer h1:first-of-type {
-	text-align: center;
 }
 
 
