@@ -80,7 +80,7 @@
 }
 
 .content-container h1 {
-	font-size: clamp(3rem, 2.913rem + 0.4348vw, 3.5rem);
+	font-size: clamp(3rem, 2.913rem + 0.4348vw, 2rem);
 	max-width: 40ch;
 	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
 }
@@ -295,6 +295,10 @@ footer a {
 	margin-top: .5rem;
 }
 
+.hours p {
+	color: var(--wht);
+}
+
 .map-and-directions {
 	font-weight: bold;
 	color: black;
@@ -336,7 +340,7 @@ address a:hover {
 
 address span {
 	font-family: var(--body-font);
-	color: black;
+	color: var(--wht);
 }
 
 address a {

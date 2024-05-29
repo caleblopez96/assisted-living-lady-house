@@ -31,7 +31,7 @@ html{
 body {
 	text-wrap: balance;
 	width: 100%;
-	font-size: clamp(1rem, 0.8261rem + 0.8696vw, 2rem);
+
 }
 
 
