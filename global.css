@@ -76,7 +76,6 @@ p {
 a {
 	text-decoration: none;
 	cursor: pointer;
-	color: var(--wht);
 }
 
 header {
