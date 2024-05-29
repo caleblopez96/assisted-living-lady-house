@@ -26,7 +26,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 1.25rem;
 }
 
 .nav-logo img {
@@ -458,7 +457,6 @@ button:hover {
 		position: absolute;
 		background-color: var(--lady-house-green);
 		height: 100vh;
-
 	}
 
 	.nav-item {
