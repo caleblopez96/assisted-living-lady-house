@@ -1,4 +1,4 @@
-// const html = document.querySelector("html")
+const html = document.querySelector("html")
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const main = document.querySelector("main");
@@ -16,10 +16,9 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
-	// html.classList.toggle("remove-scroll")
+	html.classList.toggle("remove-scroll")
 
-// 	const blurElements = [main, footer, hero, quickConnect];
-	
+// 	const blurElements = [main, footer, hero, quickConnect]
 // 	blurElements.forEach(element => {
 // 	element.classList.toggle("blur");
 // });
