@@ -457,7 +457,6 @@ button:hover {
 		top: 7rem;
 		position: absolute;
 		background-color: var(--lady-house-green);
-		gap: .25rem;
 		height: 100vh;
 
 	}
@@ -531,8 +530,4 @@ button:hover {
 		flex-wrap: wrap;
 		gap: 1rem;
 	}
-}
-
-.remove-scroll {
-	overflow: hidden;
 }
