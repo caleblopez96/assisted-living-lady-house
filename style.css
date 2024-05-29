@@ -26,6 +26,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 1.25rem;
 }
 
 .nav-logo img {
@@ -512,6 +513,10 @@ button:hover {
 	flex-direction: column;
 }
 
+.nav-menu {
+	gap: 0;	
+}
+
 }
 
 /* desktop */
@@ -531,9 +536,5 @@ button:hover {
 		justify-content: space-around;
 		flex-wrap: wrap;
 		gap: 1rem;
-	}
-
-	.nav-menu {
-		gap: 1.25rem;	
 	}
 }
