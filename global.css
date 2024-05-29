@@ -28,7 +28,6 @@ html{
 	padding: 0;
 }
 
-
 body {
 	text-wrap: balance;
 	width: 100%;
@@ -76,6 +75,8 @@ p {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
+	color: var(--wht);
 }
 
 header {

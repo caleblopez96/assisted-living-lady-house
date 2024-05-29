@@ -280,6 +280,8 @@ footer li {
 
 footer a {
 	font-family: var(--body-font);
+	color: var(--wht);
+
 }
 
 /* footer a:visited {
@@ -300,7 +302,7 @@ footer a {
 
 a[href^="tel:"],
 a[href^="mailto:"] {
-	color: black;
+	color: var(--wht);
 }
 
 /* .footer-section a {
@@ -334,6 +336,10 @@ address a:hover {
 address span {
 	font-family: var(--body-font);
 	color: black;
+}
+
+address a {
+	color: var(--wht);
 }
 
 .copyright-container {
