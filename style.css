@@ -242,8 +242,9 @@ path {
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
+  font-size: 20px;
   line-height: 20px;
-  padding: 0.75rem;
+  padding: 1rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -478,7 +479,6 @@ iframe {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
 .form-group {
@@ -610,6 +610,11 @@ button:hover {
 
 /* desktop */
 @media screen and (min-width: 769px) {
+
+  #hero {
+    height: 600px; /* temp for now --> try to get desired height without hard coding */
+  }
+
   .footer-section-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
