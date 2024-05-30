@@ -16,6 +16,8 @@ html{
 
 	--box-shadow-minimal: "box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px";
 	--box-shadow-prominent: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px";
+
+	--section-padding: 5rem 1;
 }
 
 /* global */
@@ -37,9 +39,8 @@ body {
 
 html,
 body {
-	/* overflow-x: hidden; */
-	line-height: 1.5;
-  text-wrap: balance;
+	overflow-x: hidden;
+	line-height: 1.7;
 	width: 100%;
 }
 
@@ -52,7 +53,7 @@ main {
 header,
 footer {
 	background-color: var(--lady-house-green);
-  width: 100%;
+	width: 100%;
 }
 
 footer {
@@ -71,6 +72,7 @@ li {
 
 p {
 	font-family: var(--body-font);
+	padding: .3rem 0;
 }
 
 a {
@@ -95,7 +97,8 @@ path {
 }
 
 .section-spacing{
-  margin: 2rem 0;
+	margin: 2rem 0;
+	padding: 3rem 0;
 }
 
 .remove-scroll {

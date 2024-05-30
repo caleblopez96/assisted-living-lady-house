@@ -65,8 +65,6 @@
 	background-image: url(assets/gif.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 90vh;
-
 }
 
 .content-container {
@@ -76,13 +74,13 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 2rem;
-	padding: 1rem;
+	padding: 4rem 1rem;
 }
 
 .content-container h1 {
-	font-size: clamp(3rem, 2.913rem + 0.4348vw, 2rem);
+	font-size: clamp(2.5rem, 2.913rem + 0.4348vw, 2rem);
 	max-width: 40ch;
-	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
 }
 
 .content-container p {
@@ -103,11 +101,15 @@
 
 
 .quick-connect p {
-		color: var(--wht);
-		max-width: 20ch;
-	}
+	color: var(--wht);
+	max-width: 20ch;
+}
 
 /* service section */
+
+.services-section {
+	padding: 0 1rem;
+}
 
 .services-section ul {
 	font-family: var(--body-font);
@@ -146,7 +148,7 @@
   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-weight: 600;
   line-height: 20px;
-  padding: 1.2rem;
+  padding: .75rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -171,7 +173,7 @@
 		font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 		font-weight: 600;
 		line-height: 20px;
-		padding: 1rem 1.5rem;
+		padding: .75rem 1rem;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -212,7 +214,7 @@
 
 .heading-word-spacing{
 	letter-spacing: .15rem;
-	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-card {
@@ -257,7 +259,7 @@
 
 footer h3 {
 	text-decoration: underline;
-	margin: 1em 0;
+	margin: .75em 0;
 }
 
 .small-topper-left {
@@ -287,7 +289,7 @@ footer li {
 footer a {
 	font-family: var(--body-font);
 	color: var(--wht);
-	margin: .5em 0;
+	/* margin: .5em 0; */
 }
 
 /* footer a:visited {
@@ -297,7 +299,7 @@ footer a {
 .footer-section {
 	display: flex;
 	flex-direction: column;
-	margin-top: .5rem;
+	/* margin-top: .5rem; */
 }
 
 .hours p {
@@ -322,8 +324,13 @@ a[href^="mailto:"] {
 footer > * {
 	padding: 0.5rem 1rem;
 	text-align: left;
+
 }
 
+address {
+	font-family: var(--body-font);
+	color: var(--wht);
+}
 
 address > * {
 	/* line-height: 2rem; */
