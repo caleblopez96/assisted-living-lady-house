@@ -534,9 +534,12 @@ button:hover {
 /* desktop */
 @media screen and (min-width: 769px) {
   .footer-section-container {
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+	/* place-items: center; */
 	}
 
 	iframe {
