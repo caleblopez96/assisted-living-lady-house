@@ -136,27 +136,27 @@
 }
 
 .button {
-  appearance: none;
-  background-color: var(--lady-house-green);
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
-  color: var(--wht);
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-weight: 600;
-  line-height: 20px;
-  padding: .75rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
+	appearance: none;
+	background-color: var(--lady-house-green);
+	border: 1px solid rgba(27, 31, 35, .15);
+	border-radius: 6px;
+	box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+	box-sizing: border-box;
+	color: var(--wht);
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+	font-weight: 600;
+	line-height: 20px;
+	padding: .75rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
 	max-width: fit-content;
 }
 
@@ -292,10 +292,6 @@ footer a {
 	/* margin: .5em 0; */
 }
 
-/* footer a:visited {
-	color: var(--wht);
-} */
-
 .footer-section {
 	display: flex;
 	flex-direction: column;
@@ -323,7 +319,7 @@ a[href^="mailto:"] {
 
 footer > * {
 	padding: 0.5rem 1rem;
-	text-align: left;
+	/* text-align: left; */
 
 }
 
@@ -358,7 +354,6 @@ address a {
 .copyright-container {
 	display: flex;
 	flex-direction: column;
-	font-size: clamp(.5rem, 0.8261rem + 0.8696vw, 1rem);
 	color: var(--wht);
 
 	font-family: var(--body-font);
@@ -533,12 +528,11 @@ button:hover {
 
 /* desktop */
 @media screen and (min-width: 769px) {
-  .footer-section-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 16px;
-	grid-row-gap: 16px;
+	.footer-section-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 1rem;
 	/* place-items: center; */
 	}
 
