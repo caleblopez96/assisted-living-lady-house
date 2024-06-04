@@ -1,10 +1,6 @@
 const html = document.querySelector("html")
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const main = document.querySelector("main");
-const footer = document.querySelector("footer");
-const hero = document.querySelector('#hero');
-const quickConnect = document.querySelector(".quick-connect");
 const phoneInput = document.querySelector("#phone");
 
 
