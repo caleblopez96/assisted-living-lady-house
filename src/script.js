@@ -5,6 +5,7 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 const hero = document.querySelector('#hero');
 const quickConnect = document.querySelector(".quick-connect");
+const phoneInput = document.querySelector("#phone");
 
 
 // button.addEventListener("click", () => {
@@ -17,9 +18,26 @@ function mobileMenu() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
 	html.classList.toggle("remove-scroll")
+}
 
-// 	const blurElements = [main, footer, hero, quickConnect]
-// 	blurElements.forEach(element => {
-// 	element.classList.toggle("blur");
-// });
+phoneInput.addEventListener("input", mobileNumberFormFormatting);
+
+function mobileNumberFormFormatting(e) {
+  let input = e.target.value.replace(/\D/g, ''); 
+
+  let formattedInput = '';
+
+  if(input.length > 0) {
+    formattedInput += '('+ input.substring(0, 3);
+  }
+
+  if(input.length >= 4) {
+    formattedInput += ')' + input.substring(3, 6);
+  }
+
+  if(input.length >= 7) {
+    formattedInput += '-' + input.substring(6, 10);
+  }
+
+  e.target.value = formattedInput;
 }

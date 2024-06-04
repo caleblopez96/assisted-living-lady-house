@@ -5,6 +5,8 @@
 
   --lady-house-green: rgb(102, 126, 89);
 
+  --plum: #7E5966;
+
   --heading-font: "Playfair Display", serif;
   --body-font: "Manrope", sans-serif;
 
@@ -20,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-*,
+*, 
 *::before,
 *::after {
   box-sizing: border-box;
@@ -41,7 +43,7 @@ body {
 }
 
 main {
-  padding: 0 1rem 1rem 1rem;
+  /* padding: 0 1rem 1rem 1rem; */
 }
 
 header,
@@ -85,9 +87,9 @@ path {
   stroke: var(--wht);
 }
 
-.blur {
+/* .blur {
   filter: blur(0.75rem);
-}
+} */
 
 .section-spacing{
   margin: 2rem 0;
@@ -98,7 +100,7 @@ path {
   overflow: hidden;
 }
 
-/* navbar */
+/* ---------- navbar ---------- */
 
 .navbar {
   display: flex;
@@ -142,10 +144,11 @@ path {
 .nav-link {
   font-weight: 700;
   color: var(--wht);
+  letter-spacing: .075rem;
 }
 
 .nav-link:hover {
-  color: tan;
+  color: #d2b48c;
   border-bottom: 2px solid tan;
 }
 
@@ -160,7 +163,7 @@ path {
   gap: 1rem;
 }
 
-/* hero */
+/* ---------- hero section ---------- */
 #hero {
   background-image: url(assets/gif.gif);
   background-size: cover;
@@ -187,6 +190,8 @@ path {
   max-width: 65ch;
 }
 
+
+/* ---------- quick connect ---------- */
 .quick-connect {
   width: 100%;
 }
@@ -200,11 +205,39 @@ path {
 }
 
 .quick-connect p {
-  color: var(--wht);
+  /* color: var(--wht); */
   max-width: 20ch;
 }
 
-/* service section */
+/* --------- services section ---------- */
+
+.services-section {
+  /* padding: 0 1rem; */
+  text-align: center;
+}
+
+.placeholder-image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3.5rem;
+}
+
+.services-section-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.services-section h1 {
+  text-align: center;
+}
+
+
 
 .services-section ul {
   font-family: var(--body-font);
@@ -213,22 +246,24 @@ path {
 
 .services-section a:visited,
 .amenities-section a:visited {
-  color: inherit;
+  /* color: inherit; */
 }
 
-/* amenities */
+/* ---------- amenities section --------- */
 
 .amenities-section ul {
   font-family: var(--body-font);
 }
 
-/* testimonial */
+/* ---------- testimonial section ---------- */
 .testimonial-card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 2rem;
 }
+
+/* ---------- button styles ----------*/
 
 .button {
   appearance: none;
@@ -242,7 +277,7 @@ path {
   display: inline-block;
   font-family: var(--body-font);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   padding: 1rem;
   position: relative;
@@ -263,7 +298,7 @@ path {
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
-  color: var(--lady-house-green);
+  color: black;
   cursor: pointer;
   display: inline-block;
   font-family: var(--body-font);
@@ -312,6 +347,8 @@ path {
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
 }
 
+/* ----------testimonial card ---------- */
+
 .testimonial-card {
   background-repeat: repeat;
   color: var(--wht);
@@ -340,7 +377,7 @@ path {
   color: var(--wht);
 }
 
-/* footer */
+/* --------- footer ---------- */
 
 .footer-img {
   max-width: auto;
@@ -359,6 +396,14 @@ footer h3 {
 .small-topper-left {
   color: var(--lady-house-green);
   text-align: left;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+}
+
+.small-topper-center {
+  color: var(--lady-house-green);
+  text-align: center;
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
   font-weight: 700;
@@ -456,7 +501,7 @@ iframe {
   text-align: center;
 }
 
-/* form */
+/* ---------- form ---------- */
 
 .form-container {
   display: flex;
@@ -509,7 +554,7 @@ button:hover {
   background-color: rgb(92, 116, 79);
 }
 
-/* MEDIA QUERIES */
+/* --------------- MEDIA QUERIES --------------- */
 
 /* 769PX OR LESS **MOBILE** */
 
@@ -608,11 +653,15 @@ button:hover {
   }
 }
 
-/* desktop */
+/* 769PX OR MORE **DESKTOP** */
 @media screen and (min-width: 769px) {
 
   #hero {
     height: 600px; /* temp for now --> try to get desired height without hard coding */
+  }
+
+  .services-section-flex-container {
+    flex-direction: row;
   }
 
   .footer-section-container {
