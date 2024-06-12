@@ -16,6 +16,8 @@ function mobileMenu() {
 	html.classList.toggle("remove-scroll")
 }
 
+// form formatting
+
 phoneInput.addEventListener("input", mobileNumberFormFormatting);
 
 function mobileNumberFormFormatting(e) {
