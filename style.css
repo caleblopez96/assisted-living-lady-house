@@ -5,7 +5,9 @@
 
   --lady-house-green: rgb(102, 126, 89);
 
-  --plum: #7E5966;
+  --plum: rgb(102, 89, 115, 0.9);
+
+  --tan: #FDF5E6;
 
   --heading-font: "Playfair Display", serif;
   --body-font: "Manrope", sans-serif;
@@ -93,7 +95,7 @@ path {
 } */
 
 .section-spacing{
-  margin: 6rem 0;
+  /* margin: 6rem 0; */
 }
 
 .remove-scroll {
@@ -215,7 +217,13 @@ path {
   /* margin: 10rem 0; */
   /* padding: 0 1rem; */
   /* text-align: center; */
+  /* background-color: var(--plum); */
+  /* background: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgba(102,126,89,1) 100%); */
+  /* background: linear-gradient(180deg, rgba(102,89,115,1) 0%, rgba(250,250,250,1) 50%, rgba(102,89,115,1) 100%); */
+  background-color: #FDF5E6;
+  padding: 3rem 0;
 }
+
 
 .services-section img {
   /* height: 300px; */
