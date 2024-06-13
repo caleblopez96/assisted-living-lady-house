@@ -619,6 +619,7 @@ iframe {
   }
 
   .services-section img {
+    height: auto;
     min-width: 95%;
     max-width: 100%; 
   }
