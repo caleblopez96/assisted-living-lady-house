@@ -93,7 +93,7 @@ path {
 } */
 
 .section-spacing{
-  margin: 8.75rem 0;
+  margin: 6rem 0;
 }
 
 .remove-scroll {
@@ -213,15 +213,15 @@ path {
 
 .services-section {
   /* margin: 10rem 0; */
-  padding: 0 1.25rem;
+  /* padding: 0 1rem; */
   /* text-align: center; */
 }
 
 .services-section img {
-  height: 300px;
-  width: 300px;
-  box-shadow: var(--box-shadow-prominent);
-
+  /* height: 300px; */
+  /* width: 320px; */
+  /* box-shadow: var(--box-shadow-prominent); */
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 25px 50px -12px;
 }
 
 .placeholder-image {
@@ -232,8 +232,8 @@ path {
 
 .services-section-flex-container {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   /* justify-content: space-between; */
   gap: 1.5rem; 
   padding: 0 1.25rem;
@@ -244,7 +244,8 @@ path {
 }
 
 .services-section h1 {
-  text-align: center;
+  /* text-align: center; */
+  margin: 0.25rem 0 1rem 0;
 }
 
 
@@ -366,7 +367,7 @@ path {
 }
 
 .heading-word-spacing {
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.05rem;
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
 }
 
@@ -401,6 +402,59 @@ path {
   color: var(--wht);
 }
 
+/* ---------- form ---------- */
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1.25rem;
+  gap: 2.5em;
+}
+
+.form-container section {
+  flex: 1;
+  font-size: clamp(1rem, 0.8261rem + 0.8696vw, 2rem);
+}
+
+.responsive-form {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(102, 126, 89);
+  font-family: var(--heading-font);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(102, 126, 89);
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(92, 116, 79);
+}
+
 /* --------- footer ---------- */
 
 .footer-img {
@@ -420,7 +474,7 @@ footer h3 {
 .small-topper-left {
   color: var(--lady-house-green);
   text-align: left;
-  font-size: 0.75rem;
+  font-size: .95rem;
   letter-spacing: 0.25rem;
   font-weight: 700;
 }
@@ -428,7 +482,7 @@ footer h3 {
 .small-topper-center {
   color: var(--lady-house-green);
   text-align: center;
-  font-size: 0.75rem;
+  font-size: .95rem;
   letter-spacing: 0.25rem;
   font-weight: 700;
 }
@@ -525,64 +579,12 @@ iframe {
   text-align: center;
 }
 
-/* ---------- form ---------- */
-
-.form-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0 1.25rem;
-  gap: 2.5em;
-}
-
-.form-container section {
-  flex: 1;
-  font-size: clamp(1rem, 0.8261rem + 0.8696vw, 2rem);
-}
-
-.responsive-form {
-  flex: 1;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: rgb(102, 126, 89);
-  font-family: var(--heading-font);
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-input:focus,
-textarea:focus {
-  border-color: rgb(102, 126, 89);
-  outline: none;
-}
-
-button:hover {
-  background-color: rgb(92, 116, 79);
-}
 
 /* --------------- MEDIA QUERIES --------------- */
 
 /* 769PX OR LESS **MOBILE** */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 500px) {
   header {
     position: sticky;
     top: 0;
@@ -609,7 +611,8 @@ button:hover {
   }
 
   .services-section img {
-    width: 300px;
+    min-width: 95%;
+    max-width: 100%; 
   }
 
   .nav-menu {
@@ -683,6 +686,23 @@ button:hover {
   .nav-menu {
     gap: 0;
   }
+}
+
+/* Tablets (770px to 1024px) */
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  /* .services-section img {
+    max-width: 769px;
+  } */
+}
+
+/* Small desktops and laptops (1025px to 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Your CSS for small desktops and laptops here */
+}
+
+/* Large desktops and laptops (1441px and up) */
+@media screen and (min-width: 1441px) {
+  /* Your CSS for large desktops and laptops here */
 }
 
 /* 769PX OR MORE **DESKTOP** */
