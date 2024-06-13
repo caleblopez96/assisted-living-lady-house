@@ -224,7 +224,7 @@ path {
 
 
 .services-section img {
-  height: auto;
+  max-height: 300px;
   width: 90%;
   max-width: 95%;
   /* box-shadow: var(--box-shadow-prominent); */
