@@ -10,8 +10,9 @@
   --heading-font: "Playfair Display", serif;
   --body-font: "Manrope", sans-serif;
 
-  --box-shadow-minimal: "box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px";
-  --box-shadow-prominent: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px";
+  --box-shadow-minimal: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  --box-shadow-prominent: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
   --section-padding: 5rem 1;
 }
@@ -92,7 +93,7 @@ path {
 } */
 
 .section-spacing{
-  margin: 10rem 0;
+  margin: 8.75rem 0;
 }
 
 .remove-scroll {
@@ -213,7 +214,14 @@ path {
 .services-section {
   /* margin: 10rem 0; */
   padding: 0 1.25rem;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.services-section img {
+  height: 300px;
+  width: 300px;
+  box-shadow: var(--box-shadow-prominent);
+
 }
 
 .placeholder-image {
@@ -224,9 +232,10 @@ path {
 
 .services-section-flex-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  gap: 1.5rem;
+  /* justify-content: space-between; */
+  gap: 1.5rem; 
   padding: 0 1.25rem;
 }
 
@@ -258,6 +267,10 @@ path {
 
 .amenities-section ul {
   font-family: var(--body-font);
+}
+
+.amenities-section li a {
+  color: black;
 }
 
 /* ---------- testimonial section ---------- */
@@ -589,6 +602,14 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .services-section-flex-container {
+    flex-direction: column;
+  }
+
+  .services-section img {
+    width: 300px;
   }
 
   .nav-menu {
