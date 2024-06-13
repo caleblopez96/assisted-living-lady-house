@@ -217,10 +217,7 @@ path {
   /* margin: 10rem 0; */
   /* padding: 0 1rem; */
   /* text-align: center; */
-  /* background-color: var(--plum); */
-  /* background: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgba(102,126,89,1) 100%); */
-  /* background: linear-gradient(180deg, rgba(102,89,115,1) 0%, rgba(250,250,250,1) 50%, rgba(102,89,115,1) 100%); */
-  background-color: #FDF5E6;
+  background: linear-gradient(0deg, rgba(255,244,224,1) 0%, rgba(250,250,250,1) 100%);
   padding: 3rem 0;
 }
 
@@ -241,7 +238,7 @@ path {
 .services-section-flex-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   gap: 1.5rem; 
   padding: 0 1.25rem;
@@ -711,6 +708,10 @@ iframe {
 /* Large desktops and laptops (1441px and up) */
 @media screen and (min-width: 1441px) {
   /* Your CSS for large desktops and laptops here */
+  .services-section img {
+  max-height: 500px; 
+  max-width: 330px; 
+  }
 }
 
 /* 769PX OR MORE **DESKTOP** */
