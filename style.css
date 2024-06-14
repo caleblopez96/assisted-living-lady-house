@@ -596,6 +596,10 @@ iframe {
   overflow: hidden;
 }
 
+.slider a {
+  color: black;
+}
+
 .slides {
   display: flex;
   
