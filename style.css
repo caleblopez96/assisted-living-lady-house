@@ -615,12 +615,8 @@ iframe {
 
 .slides {
   display: flex;
-  
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  
-  
-  
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   
@@ -719,7 +715,7 @@ img {
   }
 
   .services-section img {
-    height: 300px;
+    /* height: 300px; */
   }
 
   .nav-menu {
@@ -846,5 +842,3 @@ img {
     gap: 1rem;
   }
 }
-
-
