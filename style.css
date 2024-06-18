@@ -207,7 +207,7 @@ path {
 }
 
 .quick-connect p {
-  /* color: var(--wht); */
+  color: var(--wht);
   max-width: 20ch;
 }
 
