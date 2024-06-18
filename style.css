@@ -277,11 +277,23 @@ path {
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem 0;
+}
 
+.amenities-section li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .amenities-section li a {
   color: black;
+}
+
+.amenities-section img {
+  height: 40px;
+  width: 40px;
 }
 
 /* ---------- testimonial section ---------- */
