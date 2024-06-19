@@ -15,8 +15,6 @@
   --box-shadow-minimal: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   --box-shadow-prominent: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
-  --section-padding: 5rem 1;
 }
 
 html {
@@ -54,10 +52,6 @@ header,
 footer {
   background-color: var(--lady-house-green);
   width: 100%;
-}
-
-footer {
-  background-color: rgba(102, 126, 89, 0.95);
 }
 
 h1,
@@ -178,11 +172,12 @@ path {
 .content-container h1 {
   font-size: clamp(2.5rem, 2.913rem + 0.4348vw, 2rem);
   max-width: 40ch;
-  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
 }
+
 
 .content-container p {
   max-width: 65ch;
+  font-size: 1.2rem;
 }
 
 
@@ -393,11 +388,6 @@ path {
   box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
 }
 
-.heading-word-spacing {
-  letter-spacing: 0.05rem;
-  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
-}
-
 /* ----------testimonial card ---------- */
 
 .testimonial-card {
@@ -485,6 +475,12 @@ button:hover {
 
 /* --------- footer ---------- */
 
+footer {
+  padding: 0 1.25rem;
+  background-color: rgba(102, 126, 89, 0.95);
+  color: var(--wht);
+}
+
 .footer-img {
   max-width: auto;
   height: 300px;
@@ -494,9 +490,15 @@ button:hover {
   border-radius: 50%;
 }
 
+footer h2 {
+  font-size: 1rem;
+  
+}
+
 footer h3 {
   text-decoration: underline;
   margin: 0.75em 0;
+  color: var(--wht);
 }
 
 .small-topper-left {
@@ -549,7 +551,6 @@ footer a {
 
 .map-and-directions {
   font-weight: bold;
-  color: black;
   font-family: var(--heading-font);
 }
 
@@ -566,16 +567,12 @@ footer > * {
 address {
   font-family: var(--body-font);
   color: var(--wht);
-}
-
-address > * {
-  /* line-height: 2rem; */
-  color: var(--wht);
   font-style: normal;
 }
 
-address h3 {
-  color: black;
+address > * {
+  color: var(--wht);
+  font-style: normal;
 }
 
 address a:hover {
@@ -596,6 +593,7 @@ address a {
   flex-direction: column;
   color: var(--wht);
   font-family: var(--body-font);
+  margin-top: 3rem;
 }
 
 iframe {
