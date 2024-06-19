@@ -315,6 +315,15 @@ path {
 .about-section {
   margin: 3rem 0;
   padding: 0 1.25rem;
+  background-color: var(--tan);
+}
+
+.about-section img {
+  padding: 2rem 0;
+}
+
+.about-section a {
+  margin: 2rem 0;
 }
 
 /* ---------- testimonial section ---------- */
@@ -423,11 +432,12 @@ path {
 /* ---------- form ---------- */
 
 .form-container {
+  background-color: var(--tan);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 1.25rem;
+  padding: 1.25rem;
   gap: 2.5em;
 }
 
@@ -549,8 +559,8 @@ a[href^="mailto:"] {
 }
 
 footer > * {
-  padding: 0.5rem 1rem;
-  /* text-align: left; */
+  /* padding: 0.5rem 1rem;
+  text-align: left; */
 }
 
 address {
@@ -649,7 +659,7 @@ iframe {
   font-size: 100px;
 }
 
-img {
+.slides img {
   object-fit: cover;
   /* position: absolute; */
   top: 0;
